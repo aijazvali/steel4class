@@ -1,0 +1,8 @@
+{
+  "test_accuracy": 0.8119517543859649,
+  "test_balanced_accuracy": 0.811951754385965,
+  "test_macro_f1": 0.8120664420747875,
+  "test_loss": 0.47306428392205324,
+  "model": "swin_tiny_patch4_window7_224",
+  "manifest": "data/processed/manifest_4class_balanced.csv"
+}

@@ -1,0 +1,9 @@
+{
+  "test_accuracy": 0.8674023471711333,
+  "test_balanced_accuracy": 0.8324742085118465,
+  "test_macro_f1": 0.8239050539690917,
+  "test_loss": 0.38848691557518217,
+  "model": "efficientnet_b0",
+  "manifest": "data/processed/manifest_4class_all.csv",
+  "num_tabular_features": 268
+}

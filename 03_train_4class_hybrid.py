@@ -232,7 +232,7 @@ def main():
 
     pd.DataFrame(history).to_csv(out_dir / "history.csv", index=False)
 
-    ckpt = torch.load(out_dir / "best_model.pt", map_location=device)
+    ckpt = torch.load(out_dir / "best_model.pt", map_location=device, weights_only=False)
     model.load_state_dict(ckpt["state_dict"])
     test_metrics = evaluate(model, test_loader, device)
 
