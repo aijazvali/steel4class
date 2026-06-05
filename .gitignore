@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .gradio/
+auto_feature_debug_mask.png
