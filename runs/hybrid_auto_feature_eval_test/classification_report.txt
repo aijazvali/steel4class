@@ -1,0 +1,10 @@
+               precision    recall  f1-score   support
+
+non-inclusion     0.9519    0.9304    0.9410      2745
+        oxide     0.7779    0.8255    0.8010       980
+      sulfide     0.7207    0.7412    0.7308       456
+  oxy-sulfide     0.8214    0.8154    0.8184      1528
+
+     accuracy                         0.8665      5709
+    macro avg     0.8180    0.8282    0.8228      5709
+ weighted avg     0.8686    0.8665    0.8674      5709

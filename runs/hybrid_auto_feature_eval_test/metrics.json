@@ -1,0 +1,10 @@
+{
+  "accuracy": 0.8665265370467683,
+  "balanced_accuracy": 0.8281505609921949,
+  "macro_f1": 0.8228095350894964,
+  "weighted_f1": 0.8673837126272282,
+  "num_samples": 5709,
+  "split": "test",
+  "model": "efficientnet_b0",
+  "feature_mode": "auto_extracted_from_image"
+}
