@@ -6,6 +6,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 import pandas as pd
+from PIL import Image
 
 
 PIXEL_SIZE = 0.092773
@@ -19,12 +20,9 @@ FEATURE_COLS = [
 
 
 def read_gray(path):
-    img = cv2.imread(str(path), cv2.IMREAD_UNCHANGED)
-    if img is None:
-        raise FileNotFoundError(path)
-
-    if img.ndim == 3:
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    # Use PIL for loading TIFF images to avoid OpenCV TIFF metadata warnings.
+    img = Image.open(path).convert("L")
+    img = np.array(img)
 
     if img.dtype != np.uint8:
         img = cv2.normalize(img, None, 0, 255, cv2.NORM_MINMAX).astype("uint8")
