@@ -4,3 +4,4 @@ __pycache__/
 .ipynb_checkpoints/
 .gradio/
 auto_feature_debug_mask.png
+.venv/
